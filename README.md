@@ -1,1 +1,1 @@
-# Simple-Webpage
+Cognifyz Assesment
