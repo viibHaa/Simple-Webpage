@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Webpage</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #867b7b2d;
+      }
+      .header, .form-section, .navbar {
+        margin: 20px;
+        padding: 20px;
+        background-color: rgb(137, 212, 218);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(161, 83, 83, 0.1);
+      }
+      .header {
+        text-align: center;
+      }
+      h1 {
+        color: #14664d;
+      }
+      p {
+        color: #1a0d8b;
+      }
+      img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+      }
+      h2 {
+        color: #2c2525;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+      }
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+        max-width: 300px;
+      }
+      button {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        max-width: 100px;
+        background-color: #522bdf;
+        color: rgb(248, 242, 242);
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+      nav {
+        background-color: #93dee0;
+        padding: 10px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      nav li {
+        margin-right: 20px;
+      }
+      nav a {
+        text-decoration: none;
+        color: rgb(16, 18, 175);
+      }
+      nav a:hover {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <h1>Welcome to my webpage</h1>
+      <p>This is a simple webpage with some basic elements.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWGlHc3fKs1GNblIkjim6ueb2R-VVQKkLmWuYFaaMWjg&s.jpg" alt="Image Description" />
+    </header>
+
+    <section class="form-section">
+      <h2>Contact us</h2>
+      <form action="#" method="post">
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" name="email" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </body>
+</html>
