@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Color Change</title>
+    <title> Greeting Message </title>
+    <title>Basic Calculator</title>
+    <style>
+        #colorButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<button id="colorButton">Click me !!</button>
+<h2>Basic Calculator</h2>
+<input type="number" id="number1" placeholder="Enter first number">
+<input type="number" id="number2" placeholder="Enter second number"><br>
+<button onclick="addNumbers()">calculate</button>
+<p id="result"></p>
+<script>
+    const button = document.getElementById('colorButton');
+    button.addEventListener('click', () => {
+        button.style.backgroundColor = button.style.backgroundColor === 'blue' ? 'green' :  'blue';
+    });
+</script>
+<script> 
+function showGreeting() {
+        const now = new Date();
+        const hours = now.getHours();
+        let greeting;
+
+        if (hours < 12) {
+            greeting = 'Good Morning!';
+        } else if (hours < 18) {
+            greeting = 'Good Afternoon!';
+        } else {
+            greeting = 'Good Evening!';
+        }
+
+        alert(greeting);
+    }
+
+    showGreeting();
+    </script>
+    <script>
+        function addNumbers() {
+        const num1 = parseFloat(document.getElementById('number1').value);
+        const num2 = parseFloat(document.getElementById('number2').value);
+        const sum = num1 + num2;
+        document.getElementById('result').innerText = 'Result: ' + sum;
+    }
+    </script>
+</body>
+</html>
